@@ -69,12 +69,14 @@ public class Mitarbeiter implements Serializable {
         this.gehalt = gehalt;
     }
 
-    public void printMitarbeiter() {
-        System.out.println("Name: " + name);
-        System.out.println("Vorname: " + vorname);
-        System.out.println("Alter: " + alter);
-        System.out.println("Abteilung: " + abteilung);
-        System.out.println("Gehalt: " + gehalt);
+    @Override
+    public String toString() {
+        return "ID: " + id + "\n" +
+               "Name: " + name + "\n" +
+               "Vorname: " + vorname + "\n" +
+               "Alter: " + alter + "\n" +
+               "Abteilung: " + abteilung + "\n" +
+               "Gehalt: " + gehalt;
     }
 
 

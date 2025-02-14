@@ -25,7 +25,7 @@ public class App {
             System.out.println("");
             System.out.println("Retrieving Mitarbeiter with ID 1...");
             mitarbeiter = mitarbeiterService.getMitarbeiter(1);
-            System.out.println("Retrieved Mitarbeiter: " + mitarbeiter.getName() + " " + mitarbeiter.getVorname() + " " + mitarbeiter.getAlter() + " " + mitarbeiter.getAbteilung() + " " + mitarbeiter.getGehalt());
+            System.out.println(mitarbeiter);
 
             System.out.println("");
             System.out.println("Adding another Mitarbeiter to the service...");
@@ -37,7 +37,7 @@ public class App {
             List<Mitarbeiter> mitarbeiterList = mitarbeiterService.getAllMitarbeiter();
             System.out.println("All Mitarbeiter:");
             for (Mitarbeiter m : mitarbeiterList) {
-                System.out.println("Mitarbeiter: " + m.getName() + " " + m.getVorname() + " " + m.getAlter() + " " + m.getAbteilung() + " " + m.getGehalt());
+                System.out.println(m);
             }
         } catch (Exception e) {
             e.printStackTrace();
